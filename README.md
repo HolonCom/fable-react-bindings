@@ -1,6 +1,33 @@
 # Fable Minimal App
 
-This repo is based on [fable2-samples/minimal](https://github.com/fable-compiler/fable2-samples/tree/master/minimal) and provides a minimal Fable app showcasing a selection of (react) components with their fable bindings. It is meant to test and develop bindings for existing react-components that don't have F# type bindings available yet.
+This repo is based on [fable2-samples/minimal](https://github.com/fable-compiler/fable2-samples/tree/master/minimal) and provides a minimal Fable app showcasing a selection of (react) components with their fable bindings. Its purpose is to test and develop bindings for existing react-components that don't have F# type bindings available yet.
+
+## Table of contents
+
+<!-- TOC -->
+
+- [Fable Minimal App](#fable-minimal-app)
+- [Table of contents](#table-of-contents)
+- [Before you get started: Requirements](#before-you-get-started-requirements)
+- [Getting started: Building and running the app](#getting-started-building-and-running-the-app)
+- [Project structure](#project-structure)
+    - [npm](#npm)
+    - [Webpack](#webpack)
+    - [F#](#f)
+    - [Web assets](#web-assets)
+- [Adding a new binding](#adding-a-new-binding)
+    - [What should I know before I get started?](#what-should-i-know-before-i-get-started)
+    - [How to create a binding](#how-to-create-a-binding)
+        - [1. Install the react component](#1-install-the-react-component)
+        - [2. Create a new file for the bindings](#2-create-a-new-file-for-the-bindings)
+        - [3. Define the React component creation function](#3-define-the-react-component-creation-function)
+        - [4. Define the props](#4-define-the-props)
+        - [5. Advanced typing methods: Accepting `IHTMLProp`](#5-advanced-typing-methods-acception-ihtmlprop)
+        - [6. Advanced typing methods: Nested list of props](#6-advanced-typing-methods-nested-list-of-props)
+        - [7. Advanced typing methods: Arbitrary restrictions](#7-advanced-typing-methods-arbitrary-restrictions)
+    - [Showcase and test the component](#showcase-and-test-the-component)
+
+<!-- /TOC -->
 
 ## Before you get started: Requirements
 
@@ -46,7 +73,7 @@ You should have an idea of what [Fable](https://fable.io/docs/) and [Fable.React
 
 ### How to create a binding
 
-#### 1. Install the react components
+#### 1. Install the react component
 
 Using npm, install the React component you want to provide type bindings for.
 
@@ -162,7 +189,7 @@ type CKEditorProps =
     interface IHTMLProp
 ```
 
-#### 6. Advanced typing methods: Arbitrary restrictions
+#### 7. Advanced typing methods: Arbitrary restrictions
 
 By using a `static member` we can enforce arbitrary restrictions.
 
