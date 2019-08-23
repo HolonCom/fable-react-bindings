@@ -22,7 +22,7 @@ This repo is based on [fable2-samples/minimal](https://github.com/fable-compiler
         - [2. Create a new file for the bindings](#2-create-a-new-file-for-the-bindings)
         - [3. Define the React component creation function](#3-define-the-react-component-creation-function)
         - [4. Define the props](#4-define-the-props)
-        - [5. Advanced typing methods: Accepting `IHTMLProp`](#5-advanced-typing-methods-acception-ihtmlprop)
+        - [5. Advanced typing methods: Accepting `IHTMLProp`](#5-advanced-typing-methods-accepting-ihtmlprop)
         - [6. Advanced typing methods: Nested list of props](#6-advanced-typing-methods-nested-list-of-props)
         - [7. Advanced typing methods: Arbitrary restrictions](#7-advanced-typing-methods-arbitrary-restrictions)
     - [Showcase and test the component](#showcase-and-test-the-component)
