@@ -5,6 +5,7 @@ module App
  You can find more info about Elmish architecture and samples at https://elmish.github.io/
 *)
 
+// General dependencies
 open Elmish
 open Elmish.React
 open Fable.React
@@ -32,12 +33,14 @@ let update (msg:Msg) (model:Model) =
 let view (model:Model) dispatch =
 
   div []
-      [ button [ OnClick (fun _ -> dispatch Increment) ] [ str "+" ]
-        div [] [ str (string model) ]
-        button [ OnClick (fun _ -> dispatch Decrement) ] [ str "-" ] ]
-
-// App
-Program.mkSimple init update view
-|> Program.withReactSynchronous "elmish-app"
-|> Program.withConsoleTrace
-|> Program.run
+    [
+        div [] [ ComponentsPage.page ]
+        // TODO use elmish to create a dropdown of components to showcase
+        (* Keep counter code in comment as example
+        div [] [
+            button [ OnClick (fun _ -> dispatch Increment) ] [ str "+" ]
+            div [] [ str (string model) ]
+            button [ OnClick (fun _ -> dispatch Decrement) ] [ str "-" ]
+        ]
+        *)
+    ]
