@@ -2,6 +2,8 @@
 
 This repo is based on [fable2-samples/minimal](https://github.com/fable-compiler/fable2-samples/tree/master/minimal) and provides a minimal Fable app showcasing a selection of (react) components with their fable bindings. Its purpose is to test and develop bindings for existing react-components that don't have F# type bindings available yet.
 
+Credit where credit is due: A lot of the information found here is taken from [fable2-samples](https://github.com/fable-compiler/fable2-samples) and [Using third party React components](https://github.com/fable-compiler/fable-react/blob/master/docs/using-third-party-react-components.md)
+
 ## Table of contents
 
 <!-- TOC -->
