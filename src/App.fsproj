@@ -4,6 +4,7 @@
   </PropertyGroup>
   <ItemGroup>
     <Compile Include="component-bindings/CKEditor4.fs" />
+    <Compile Include="component-bindings\react-hamburgers.fs" />
     <Compile Include="ComponentsPage.fs" />
     <Compile Include="App.fs" />
     <Compile Include="Bootstrap.fs" />
