@@ -10,6 +10,7 @@
     "fable-loader": "^2.1.8",
     "react": "^16.9.0",
     "react-dom": "^16.9.0",
+    "react-hamburgers": "^1.0.0",
     "webpack": "^4.39.2",
     "webpack-cli": "^3.3.6",
     "webpack-dev-server": "^3.8.0"
