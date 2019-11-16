@@ -16,9 +16,17 @@ module.exports = {
         port: 8080,
     },
     module: {
-        rules: [{
+        rules: [
+            {
             test: /\.fs(x|proj)?$/,
             use: "fable-loader"
-        }]
+            },
+            {
+                test: /\.(css)$/,
+                use: [
+                    'style-loader',
+                    'css-loader'
+                ],
+            }]
     }
 }
