@@ -415,13 +415,13 @@ type ChangeEvent = {
     Sender: obj
 }
 
-type CKEditorProps =
+type CKEditorProp =
     | Data of string
     | EditorUrl of string
     | Type of EditorType
     | ReadOnly of bool
     | OnChange of (obj -> unit) // CKEditor passes a huge event with all sorts of data and methods // TODO provide a type definition for the event?
-    static member Config (editorConfig: EditorConfig list) : CKEditorProps = unbox ("config", keyValueList CaseRules.LowerFirst editorConfig)
+    static member Config (editorConfig: EditorConfig list) : CKEditorProp = unbox ("config", keyValueList CaseRules.LowerFirst editorConfig)
     interface IHTMLProp
 
 let inline CKEditor (props: IHTMLProp seq) : ReactElement =

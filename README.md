@@ -117,7 +117,7 @@ In javascript an import statement of a default export would look like this:
 Making the component available for F#/Fable consumption would look like this:
 
 ```
-let inline ckeditor4 (props : IHTMLProp list) : ReactElement =
+let inline CKEditor (props: IHTMLProp seq) : ReactElement =
     ofImport "default" "ckeditor4-react" (keyValueList CaseRules.LowerFirst props) []
 ```
 
