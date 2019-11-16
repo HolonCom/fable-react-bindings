@@ -7,8 +7,6 @@ open Fable.React
 open Fable.React.Props
 
 // Bindings
-open CKEditor4
-
 let displayComponent name reactComponent =
     div [ Style [ Margin 25 ] ] [
         div [ Style [ MarginBottom 10; FontSize 25 ] ] [ str name ]
