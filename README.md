@@ -1,15 +1,32 @@
-# Fable Minimal App
+# Fable React Bindings
+*Writing Fable React Bindings together*
 
-This repo is based on [fable2-samples/minimal](https://github.com/fable-compiler/fable2-samples/tree/master/minimal) and provides a minimal Fable app showcasing a selection of (react) components with their fable bindings. Its purpose is to test and develop bindings for existing react-components that don't have F# type bindings available yet.
+
+This repo wants to be a collaborative workshop where we write Fable react Bindings together.
+
+It provides a minimal Fable app showcasing a selection of (react) components with their fable bindings. 
+Its purpose is to test and develop bindings for existing react-components that don't have F# type bindings available yet.
+
+Here you will find:
+
+<!-- TOC -->
+- how to write fable react bindings
+- fable react binding for
+	- CkEditor 4
+	- React Hamburgers
+    - more to come ...
+
+<!-- /TOC -->
+
 
 Credit where credit is due: A lot of the information found here is taken from [fable2-samples](https://github.com/fable-compiler/fable2-samples) and [Using third party React components](https://github.com/fable-compiler/fable-react/blob/master/docs/using-third-party-react-components.md)
+This repo is based on [fable2-samples/minimal](https://github.com/fable-compiler/fable2-samples/tree/master/minimal).
+
 
 ## Table of contents
 
 <!-- TOC -->
 
-- [Fable Minimal App](#fable-minimal-app)
-- [Table of contents](#table-of-contents)
 - [Before you get started: Requirements](#before-you-get-started-requirements)
 - [Getting started: Building and running the app](#getting-started-building-and-running-the-app)
 - [Project structure](#project-structure)
