@@ -1,3 +1,6 @@
+WARNING: this repository is NOT maintained any longer.  Various automated pull request regarding security issues are ignored.
+
+
 # Fable React Bindings
 *Writing Fable React Bindings together*
 
